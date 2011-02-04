@@ -1,0 +1,8 @@
+name: LibraryTemplate
+main: org.tal.librarytemplate.LibraryTemplate
+version: 1.0
+commands:
+  redchips-test:
+    description: Sends a test message to the player.
+    usage:
+      /<command>
