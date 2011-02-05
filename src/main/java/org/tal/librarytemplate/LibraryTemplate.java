@@ -8,6 +8,8 @@ package org.tal.librarytemplate;
 import java.io.File;
 import org.bukkit.DyeColor;
 import org.bukkit.Server;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginLoader;
 import org.tal.redstonechips.CircuitLibrary;
@@ -36,6 +38,14 @@ public class LibraryTemplate extends CircuitLibrary {
     public void onDisable() {
         // Called when the plugin is disabled.
 
+    }
+
+    public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args) {
+        // Using the usual bukkit java plugin method to handle chat commands
+        if (cmd.getName().equalsIgnoreCase("redchips-test")) {
+            sender.sendMessage(redstoneChips.getPrefsManager().getInfoColor() + "TEST!");
+            return true;
+        } else return false;
     }
 
 }
