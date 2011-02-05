@@ -23,8 +23,10 @@ public class test extends Circuit {
     }
 
     protected boolean init(Player player, String[] strings) {
-        // This code executes when you right-click on the circuit's sign.
-        player.sendMessage("You have activated LibraryTemplate test circuit.");
+        // This code executes when you right-click on the circuit's sign and again each
+        // time the plugin is enabled.
+
+        info(player, "You have activated LibraryTemplate test circuit.");
 
         return true;
     }

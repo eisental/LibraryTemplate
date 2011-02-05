@@ -6,6 +6,7 @@
 package org.tal.librarytemplate;
 
 import java.io.File;
+import org.bukkit.DyeColor;
 import org.bukkit.Server;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginLoader;
