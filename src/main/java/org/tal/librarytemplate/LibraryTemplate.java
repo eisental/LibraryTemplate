@@ -11,7 +11,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginLoader;
-import org.tal.redstonechips.CircuitLibrary;
+import org.tal.redstonechips.circuit.CircuitLibrary;
 
 /**
  *
