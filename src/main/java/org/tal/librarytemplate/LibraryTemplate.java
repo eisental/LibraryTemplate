@@ -23,20 +23,24 @@ public class LibraryTemplate extends CircuitLibrary {
         super(pluginLoader, instance, desc, folder, plugin, cLoader);
     }
 
+    @Override
     public Class[] getCircuitClasses() {
         return new Class[] { test.class };
     }
 
+    @Override
     public void onEnable() {
         // Called when the circuit library plugin is enabled.
         // No need to write anything to the console. RedstoneChips will list the loaded circuits.
     }
 
+    @Override
     public void onDisable() {
         // Called when the circuit library plugin is disabled.
 
     }
 
+    @Override
     public void onRedstoneChipsEnable() {
 
         // Called by the RedstoneChips plugin immediately after finishing loading circuit classes from every installed circuit library.
@@ -48,6 +52,7 @@ public class LibraryTemplate extends CircuitLibrary {
         redstoneChips.getPrefsManager().registerCircuitPreference(test.class, "msg", "TEST!");
     }
 
+    @Override
     public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args) {
 
         // Using the usual bukkit java plugin method to handle chat commands

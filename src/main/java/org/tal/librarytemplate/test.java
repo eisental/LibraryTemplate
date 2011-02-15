@@ -14,6 +14,7 @@ import org.tal.redstonechips.circuit.Circuit;
  */
 public class test extends Circuit {
 
+    @Override
     public void inputChange(int index, boolean state) {
         // This is where you handle changes in input state.
         // The index is the input's pin number and state is true when the input turns high and false when it turns low.
@@ -22,6 +23,7 @@ public class test extends Circuit {
         sendOutput(index, state);
     }
 
+    @Override
     protected boolean init(Player player, String[] strings) {
         // This code executes when you right-click on the circuit's sign and again each
         // time the the server is restarted or the RedstoneChips plugin is enabled.
