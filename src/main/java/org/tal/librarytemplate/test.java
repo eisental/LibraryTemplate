@@ -5,7 +5,7 @@
 
 package org.tal.librarytemplate;
 
-import org.bukkit.entity.Player;
+import org.bukkit.command.CommandSender;
 import org.tal.redstonechips.circuit.Circuit;
 
 /**
@@ -24,11 +24,11 @@ public class test extends Circuit {
     }
 
     @Override
-    protected boolean init(Player player, String[] strings) {
+    protected boolean init(CommandSender sender, String[] strings) {
         // This code executes when you right-click on the circuit's sign and again each
         // time the the server is restarted or the RedstoneChips plugin is enabled.
 
-        info(player, "You have activated LibraryTemplate test circuit.");
+        info(sender, "You have activated LibraryTemplate test circuit.");
 
         return true;
     }
