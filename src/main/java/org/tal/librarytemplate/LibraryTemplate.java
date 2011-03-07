@@ -31,7 +31,7 @@ public class LibraryTemplate extends JavaPlugin {
                 // This is a good place to add circuit preferences keys and any other library-wide initialization code.
 
                 // The next line adds a preference key, named "test.msg" with a default value of "TEST!"
-                // The preference value can be changed from inside the game by using the /redchips-prefs test.msg <newvalue> command
+                // The preference value can be changed from inside the game by using the /rc-prefs test.msg <newvalue> command
                 // or by directly editing the preferences.yml file.
                 redstoneChips.getPrefsManager().registerCircuitPreference(test.class, "msg", "TEST!");
             }
@@ -42,7 +42,7 @@ public class LibraryTemplate extends JavaPlugin {
     public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args) {
 
         // Using the usual bukkit java plugin method to handle chat commands
-        if (cmd.getName().equalsIgnoreCase("redchips-test")) {
+        if (cmd.getName().equalsIgnoreCase("rc-test")) {
             
             // Find the current value of the preference key we added in onRedstoneChipsEnable().
             String msg = (String)lib.redstoneChips.getPrefsManager().getPrefs().get("test.msg");
