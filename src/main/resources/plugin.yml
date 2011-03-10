@@ -1,6 +1,7 @@
 name: LibraryTemplate
 main: org.tal.librarytemplate.LibraryTemplate
-version: 1.0
+version: 0.83
+depend: [RedstoneChips]
 commands:
   rc-test:
     description: Sends a test message to the player.

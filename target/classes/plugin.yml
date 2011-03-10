@@ -1,8 +1,0 @@
-name: LibraryTemplate
-main: org.tal.librarytemplate.LibraryTemplate
-version: 1.0
-commands:
-  rc-test:
-    description: Sends a test message to the player.
-    usage:
-      /<command>
