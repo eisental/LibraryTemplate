@@ -7,35 +7,33 @@ package org.tal.librarytemplate;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
-import org.bukkit.plugin.java.JavaPlugin;
+import org.tal.redstonechips.RedstoneChips;
 import org.tal.redstonechips.circuit.CircuitLibrary;
 
 /**
  *
  * @author Tal Eisenberg
  */
-public class LibraryTemplate extends JavaPlugin {
+public class LibraryTemplate extends CircuitLibrary {
     CircuitLibrary lib;
+    private RedstoneChips redstoneChips;
 
-    public LibraryTemplate() {
-        lib = new CircuitLibrary() {
-            @Override
-            public Class[] getCircuitClasses() {
-                return new Class[] { test.class };
-            }
+    @Override
+    public Class[] getCircuitClasses() {
+        return new Class[] { test.class };
+    }
 
-            @Override
-            public void onRedstoneChipsEnable() {
+    @Override
+    public void onRedstoneChipsEnable(RedstoneChips instance) {
 
-                // Called by the RedstoneChips plugin immediately after finishing loading circuit classes from every installed circuit library.
-                // This is a good place to add circuit preferences keys and any other library-wide initialization code.
+        // Called by the RedstoneChips plugin immediately before it starts loading circuit classes from every installed circuit library.
+        // This is a good place to add circuit preferences keys and any other library-wide initialization code.
 
-                // The next line adds a preference key, named "test.msg" with a default value of "TEST!"
-                // The preference value can be changed from inside the game by using the /rc-prefs test.msg <newvalue> command
-                // or by directly editing the preferences.yml file.
-                redstoneChips.getPrefsManager().registerCircuitPreference(test.class, "msg", "TEST!");
-            }
-        };
+        // The next line adds a preference key, named "test.msg" with a default value of "TEST!"
+        // The preference value can be changed from inside the game by using the /rc-prefs test.msg <newvalue> command
+        // or by directly editing the preferences.yml file.
+        instance.getPrefsManager().registerCircuitPreference(test.class, "msg", "TEST!");
+        this.redstoneChips = instance;
     }
 
     @Override
@@ -45,9 +43,9 @@ public class LibraryTemplate extends JavaPlugin {
         if (cmd.getName().equalsIgnoreCase("rc-test")) {
             
             // Find the current value of the preference key we added in onRedstoneChipsEnable().
-            String msg = (String)lib.redstoneChips.getPrefsManager().getPrefs().get("test.msg");
+            String msg = (String)redstoneChips.getPrefsManager().getPrefs().get("test.msg");
 
-            sender.sendMessage(lib.redstoneChips.getPrefsManager().getInfoColor() + msg);
+            sender.sendMessage(redstoneChips.getPrefsManager().getInfoColor() + msg);
             return true;
 
         } else

@@ -1,0 +1,31 @@
+#surefire
+#Wed Mar 09 23:56:10 CET 2011
+testClassesDirectory=/Users/eisental/projects/programming/minecraft/LibraryTemplate/target/test-classes
+classPathUrl.4=/Users/eisental/.m2/repository/org/bukkit/bukkit/0.0.1-SNAPSHOT/bukkit-0.0.1-SNAPSHOT.jar
+classPathUrl.3=/Users/eisental/.m2/repository/org/tal/RedstoneChips/beta/RedstoneChips-beta.jar
+classPathUrl.2=/Users/eisental/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar
+useManifestOnlyJar=true
+classPathUrl.1=/Users/eisental/projects/programming/minecraft/LibraryTemplate/target/classes
+reportsDirectory=/Users/eisental/projects/programming/minecraft/LibraryTemplate/target/surefire-reports
+classPathUrl.0=/Users/eisental/projects/programming/minecraft/LibraryTemplate/target/test-classes
+dirscanner.0=directoryScannerOptions
+providerConfiguration=org.apache.maven.surefire.junit.JUnit3Provider
+testSuiteDefinitionTestSourceDirectory=/Users/eisental/projects/programming/minecraft/LibraryTemplate/src/test/java
+surefireClassPathUrl.1=/Users/eisental/.m2/repository/org/apache/maven/surefire/surefire-api/2.7.1/surefire-api-2.7.1.jar
+surefireClassPathUrl.0=/Users/eisental/.m2/repository/org/apache/maven/surefire/surefire-junit3/2.7.1/surefire-junit3-2.7.1.jar
+report.2=org.apache.maven.surefire.report.XMLReporter
+useSystemClassLoader=true
+report.1=org.apache.maven.surefire.report.BriefFileReporter
+report.0=org.apache.maven.surefire.report.ForkingConsoleReporter
+excludes0=**/*$*
+isTrimStackTrace=true
+dirscanner.0.params=/Users/eisental/projects/programming/minecraft/LibraryTemplate/target/test-classes|[**/Test*.java, **/*Test.java, **/*TestCase.java]|[**/*$*]
+includes2=**/*TestCase.java
+enableAssertions=true
+includes1=**/*Test.java
+failIfNoTests=false
+dirscanner.0.types=java.io.File|java.util.ArrayList|java.util.ArrayList
+includes0=**/Test*.java
+childDelegation=false
+classPathUrl.6=/Users/eisental/.m2/repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar
+classPathUrl.5=/Users/eisental/.m2/repository/org/yaml/snakeyaml/1.7/snakeyaml-1.7.jar
