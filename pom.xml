@@ -31,7 +31,7 @@
         <dependency>
             <groupId>org.tal</groupId>
             <artifactId>RedstoneChips</artifactId>
-            <version>beta</version>
+            <version>0.84</version>
         </dependency>
     </dependencies>
 </project>
