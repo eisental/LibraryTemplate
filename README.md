@@ -9,7 +9,7 @@ Usage
 - Download the latest RedstoneChips [source code](https://github.com/eisental/RedstoneChips/zipball/master).
 - Download the [template source code](https://github.com/eisental/LibraryTemplate/zipball/master).
 - Download and install [maven](http://maven.apache.org/).
-- Compile RedstoneChips and install it into your local Maven repository by running 'mvn package install' within the root source folder.
+- Compile RedstoneChips and install it into your local Maven repository by running 'mvn package install' within the root source folder (where the pom.xml file is located).
 - Compile the template project run 'mvn package' while inside the LibraryTemplate folder to make sure everything works. The compiled jar file is created inside the target/ folder. 
 - Customize the template: 
 	- Rename the folder name, package names and the LibraryTemplate.java to fit your new library. 
