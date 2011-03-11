@@ -21,6 +21,8 @@ public class test extends Circuit {
 
         // sets the lever position of the matching output pin according to the new state.
         sendOutput(index, state);
+
+        if (hasDebuggers()) debug("Here's a debug message. Setting output " + index + " to " + (state?"on":"off"));
     }
 
     @Override

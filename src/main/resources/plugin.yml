@@ -1,9 +1,6 @@
+# Edit this file with your own plugin name.
+# Please also change the LibraryTemplate package and class names. 
 name: LibraryTemplate
 main: org.tal.librarytemplate.LibraryTemplate
-version: 0.83
+version: 0.84
 depend: [RedstoneChips]
-commands:
-  rc-test:
-    description: Sends a test message to the player.
-    usage:
-      /<command>
