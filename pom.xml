@@ -31,11 +31,12 @@
             <groupId>org.tal</groupId>
             <artifactId>RedstoneChips</artifactId>
             <version>beta</version>
-        </dependency>
-        <dependency>
-            <groupId>org.bukkit</groupId>
-            <artifactId>bukkit</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>spoutpluginapi</artifactId>
+                    <groupId>org.getspout</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 </project>
