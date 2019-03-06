@@ -17,5 +17,5 @@ Usage
 	- Edit src/main/resources/plugin.yml.
 - Write your circuits! See [test.java](https://github.com/eisental/LibraryTemplate/blob/master/src/main/java/org/tal/librarytemplate/test.java) for a simple example.
 
-NOTE: If you're using NetBeans you can load the template project by clicking on "Open Project..." and choosing the LibraryTemplate/ folder. It should have an ma-like icon. Netbeans will let you conviniently refactor all the necessary names in the project.
+NOTE: If you're using NetBeans you can load the template project by clicking on "Open Project..." and choosing the LibraryTemplate/ folder. It should have an ma-like icon. Netbeans will let you conveniently refactor all the necessary names in the project.
 
